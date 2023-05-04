@@ -7,6 +7,7 @@ let color = "red";
 for (let i = 0; i < row; i++) {
 
     let container_row = document.createElement("div");
+    container_row.className = "row";
 
 
     for (let j = 0; j < column; j++) {
