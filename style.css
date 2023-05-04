@@ -1,22 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.container {
+body {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
 }
 
-.square {
-    height: 30px;
-    width: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    outline: 1px solid rgba(0, 0, 0, 0.5);
+.heading {
+    font-size: 46px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid rgba(0, 0, 0, 0.598);
+    border-radius: 6px;
 }
 
 .row {
     display: flex;
+}
+
+footer {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    font-size: 22px;
+}
+
+.github-logo img{
+    height: 30px;
+    width: auto;
+    transition: rotate 0.5s;
+    padding-left: 10px;
+}
+
+.github-logo img:hover {
+    rotate: 360deg;
+    transform: scale(1.11);
 }
